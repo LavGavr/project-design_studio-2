@@ -105,7 +105,7 @@
                                     <span>
                                         city:
                                     </span>
-                                    <p>
+                                    <p id="rostov-text">
                                         Rostov-on-Don<br>
                                         LCD admiral
                                     </p>
@@ -114,7 +114,7 @@
                                     <span>
                                         apartment area:
                                     </span>
-                                    <p>
+                                    <p id="apartment-text">
                                         81 m<sup>2</sup>
                                     </p>
                                 </div>
@@ -124,7 +124,7 @@
                                     <span class="title">
                                         Repair time:
                                     </span>
-                                    <p>
+                                    <p id="repair-time">
                                         3.5 months
                                     </p>
                                 </div>
@@ -132,7 +132,7 @@
                                     <span class="title">
                                         Repair cost:
                                     </span>
-                                    <p>
+                                    <p id="repair-cost">
                                         Upon request
                                     </p>
                                 </div>
@@ -146,9 +146,9 @@
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.9681L41.4556 5.9681L41.4556 7.30817L0.947578 7.30816L0.947579 5.9681Z" fill="white"/>
                                         </svg>                                        
                                 </div>
-                                <div class="dots dots-active"></div>
-                                <div class="dots"></div>
-                                <div class="dots"></div>
+                                <div class="dots dots-active" onclick="currentSlide(0)"></div>
+                                <div class="dots" onclick="currentSlide(1)"></div>
+                                <div class="dots" onclick="currentSlide(2)"></div>
                                 <div class="arrow-right">
                                     <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.276L2.29917e-05 6.638L6.63807 -3.82298e-05L7.58563 0.94753L1.89516 6.638L7.58563 12.3285L6.63807 13.276Z" fill="white"/>
@@ -161,13 +161,13 @@
                         <!--column image-tabs section-->
                         <div class="completed-example___column-desc-img">
                             <div class="col-example-choice-city">
-                                <div class="choice-city__rostov">
-                                    <span class="title" title="choice city">Rostov-on-Don, Admiral</span>
+                                <div class="choice-city choice-city-active" onclick="currentSlide(0)">
+                                    <span title="choice city">Rostov-on-Don, Admiral</span>
                                 </div>
-                                <div class="choice-city__sochi">
+                                <div class="choice-city" onclick="currentSlide(1)">
                                     <span title="choice city">Sochi Thieves</span>
                                 </div>
-                                <div class="choice-city__rostov-patriotic">
+                                <div class="choice-city" onclick="currentSlide(2)">
                                     <span title="choice city">Rostov-on-Don Patriotic</span>
                                 </div>
                             </div>
@@ -859,6 +859,7 @@
         </footer>
         <!--footer section-->
     </section>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
